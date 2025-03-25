@@ -3,49 +3,87 @@
 	// Your script logic here
 </script>
 
-<!-- Hero Section - Improved for mobile but preserving desktop layout -->
-<section class="hero flex min-h-screen w-full flex-col justify-center bg-white">
-	<div class="container mx-auto px-4 sm:px-6">
-		<!-- Mobile-optimized version (hidden on larger screens) -->
-		<div class="flex flex-col items-center text-center md:hidden">
-			<h1 class="mb-2 text-4xl font-bold text-blue-900 sm:text-5xl">TECNO PIPE</h1>
-			<h1 class="mb-6 text-4xl font-bold text-blue-900 sm:text-5xl">SOLUTIONS</h1>
-
-			<p class="mb-6 max-w-md text-gray-700">
-				Industry-leading pipe solutions for residential and commercial applications.
-			</p>
-
-			<!-- Hero image placeholder -->
-			<div class="relative mb-8 h-56 w-full rounded-lg bg-gray-200 shadow-md sm:h-64">
-				<img src="images/hero.png" alt="hero" class="h-full w-full object-cover" />
-				<div class="absolute inset-0 bg-gradient-to-t from-black/90 to-black/30"></div>
+<section class="hero relative min-h-screen w-full overflow-hidden bg-white">
+	<!-- Mobile-optimized version (hidden on larger screens) -->
+	<div class="md:hidden">
+		<div class="relative min-h-screen w-full">
+			<!-- Video background for mobile -->
+			<div class="absolute inset-0">
+				<video autoplay muted loop playsinline class="h-full w-full object-cover">
+					<source src="videos/hero-video.MP4" type="video/mp4" />
+					<!-- Fallback image if video fails to load -->
+					<img src="images/hero.png" alt="hero" class="h-full w-full object-cover" />
+				</video>
+				<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
 			</div>
-
-			<div class="flex gap-4">
-				<a
-					href="#services"
-					class="rounded-md bg-blue-800 px-5 py-2 font-medium text-white transition-colors hover:bg-blue-900"
-				>
-					Our Services
-				</a>
-				<a
-					href="#contact"
-					class="rounded-md border border-blue-800 bg-white px-5 py-2 font-medium text-blue-800 transition-colors hover:bg-blue-50"
-				>
-					Contact Us
-				</a>
+			<!-- Content remains the same -->
+			<div
+				class="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 text-center"
+			>
+				<h1 class="mb-4 text-4xl font-bold text-white sm:text-5xl">
+					<span class="block">TECNO</span>
+					<span class="block text-blue-300">PIPE</span>
+				</h1>
+				<p class="mb-8 max-w-md text-lg text-gray-100">
+					Industry-leading pipe solutions for residential and commercial applications.
+				</p>
+				<div class="flex gap-4">
+					<a
+						href="#services"
+						class="rounded-md bg-blue-700 px-5 py-3 font-medium text-white transition-all hover:bg-blue-800"
+					>
+						Our Services
+					</a>
+					<a
+						href="#contact"
+						class="rounded-md border-2 border-white bg-transparent px-5 py-3 font-medium text-white transition-all hover:bg-white/10"
+					>
+						Contact Us
+					</a>
+				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- Desktop version (original layout, hidden on mobile) -->
-		<div class="hidden md:flex md:flex-col">
-			<h1 class="mb-2 text-6xl font-bold text-blue-900 lg:text-8xl">TECNO PIPE</h1>
-			<h1 class="mb-10 text-6xl font-bold text-blue-900 lg:text-8xl">SOLUTIONS</h1>
-
-			<!-- Hero image placeholder - Takes up most of the viewport -->
-			<div class="relative h-[600px] w-full bg-gray-200">
-				<img src="images/hero.png" alt="hero" class="h-full w-full object-cover" />
-				<div class="absolute inset-0 bg-gradient-to-t from-black/90 to-black/30"></div>
+	<!-- Desktop version (improved layout, hidden on mobile) -->
+	<div class="hidden md:block">
+		<div class="relative min-h-screen w-full">
+			<!-- Video background for desktop -->
+			<div class="absolute inset-0 z-0">
+				<video autoplay muted loop playsinline class="h-full w-full object-cover">
+					<source src="videos/hero-video.MP4" type="video/mp4" />
+					<!-- Fallback image if video fails to load -->
+					<img src="images/hero.png" alt="hero" class="h-full w-full object-cover" />
+				</video>
+				<div
+					class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"
+				></div>
+			</div>
+			<!-- Content remains the same -->
+			<div class="relative z-10 flex h-screen items-center px-32">
+				<div class="ml-8 max-w-2xl lg:ml-16">
+					<h1 class="mb-6 text-6xl font-bold text-white lg:text-7xl">
+						<span class="block">TECNO</span>
+						<span class="block text-blue-300">PIPE</span>
+					</h1>
+					<p class="mb-8 text-xl font-light text-gray-100 lg:text-2xl">
+						Industry-leading pipe solutions for residential and commercial applications.
+					</p>
+					<div class="flex gap-4">
+						<a
+							href="#services"
+							class="rounded-md bg-blue-700 px-6 py-3 font-medium text-white transition-all hover:bg-blue-800 hover:shadow-lg"
+						>
+							Our Services
+						</a>
+						<a
+							href="#contact"
+							class="rounded-md border-2 border-white bg-transparent px-6 py-3 font-medium text-white transition-all hover:bg-white/10"
+						>
+							Contact Us
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
