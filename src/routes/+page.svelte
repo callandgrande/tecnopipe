@@ -28,14 +28,15 @@
 					Industry-leading pipe solutions for residential and commercial applications.
 				</p>
 				<div class="flex gap-4">
-					<a
-						href="#services"
-						class="rounded-md bg-blue-700 px-5 py-3 font-medium text-white transition-all hover:bg-blue-800"
-					>
-						Our Services
+					<a href="/services">
+						<button
+							class="rounded-md bg-blue-700 px-5 py-3 font-medium text-white transition-all hover:bg-blue-800"
+						>
+							Our Services
+						</button>
 					</a>
 					<a
-						href="#contact"
+						href="/contact"
 						class="rounded-md border-2 border-white bg-transparent px-5 py-3 font-medium text-white transition-all hover:bg-white/10"
 					>
 						Contact Us
@@ -63,21 +64,20 @@
 			<div class="relative z-10 flex h-screen items-center px-32">
 				<div class="ml-8 max-w-2xl lg:ml-16">
 					<h1 class="mb-6 text-6xl font-bold text-white lg:text-7xl">
-						<span class="block">TECNO</span>
-						<span class="block text-blue-300">PIPE</span>
+						<span class="text-white">TECNO</span><span class="text-blue-300">PIPE</span>
 					</h1>
 					<p class="mb-8 text-xl font-light text-gray-100 lg:text-2xl">
 						Industry-leading pipe solutions for residential and commercial applications.
 					</p>
 					<div class="flex gap-4">
 						<a
-							href="#services"
+							href="/services"
 							class="rounded-md bg-blue-700 px-6 py-3 font-medium text-white transition-all hover:bg-blue-800 hover:shadow-lg"
 						>
 							Our Services
 						</a>
 						<a
-							href="#contact"
+							href="/contact"
 							class="rounded-md border-2 border-white bg-transparent px-6 py-3 font-medium text-white transition-all hover:bg-white/10"
 						>
 							Contact Us
