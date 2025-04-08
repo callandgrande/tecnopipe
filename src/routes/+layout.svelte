@@ -95,28 +95,21 @@
 					<a
 						href="#"
 						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
-						>Sales</a
+						>Capabilities</a
 					>
 				</li>
 				<li>
 					<a
 						href="#"
 						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
-						>HVAC</a
+						>Our Insights</a
 					>
 				</li>
 				<li>
 					<a
 						href="#"
 						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
-						>Maintenance</a
-					>
-				</li>
-				<li>
-					<a
-						href="#"
-						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
-						>About Us</a
+						>About us</a
 					>
 				</li>
 			</ul>
@@ -139,28 +132,21 @@
 						<a
 							href="#"
 							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
-							onclick={closeMenu}>Sales</a
+							onclick={closeMenu}>Capabilities</a
 						>
 					</li>
 					<li>
 						<a
 							href="#"
 							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
-							onclick={closeMenu}>HVAC</a
+							onclick={closeMenu}>Our Insights</a
 						>
 					</li>
 					<li>
 						<a
 							href="#"
 							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
-							onclick={closeMenu}>Maintenance</a
-						>
-					</li>
-					<li>
-						<a
-							href="#"
-							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
-							onclick={closeMenu}>About Us</a
+							onclick={closeMenu}>About us</a
 						>
 					</li>
 				</ul>
@@ -180,26 +166,23 @@
 		<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
 			<!-- Company Info -->
 			<div>
-				<h3 class="mb-4 text-lg font-semibold sm:text-xl">TecnoPipe Solutions</h3>
+				<h3 class="mb-4 text-lg font-semibold sm:text-xl">Tecno Pipe Solutions</h3>
 				<p class="mb-2 text-gray-300">123 Industry Drive</p>
 				<p class="mb-2 text-gray-300">Manufacturing District</p>
 				<p class="mb-2 text-gray-300">Business City, BC 12345</p>
-				<p class="mb-2 text-gray-300">
-					<a href="tel:+15551234567" class="text-gray-300 hover:text-white">(555) 123-4567</a>
-				</p>
-				<p class="text-gray-300">
-					<a href="mailto:info@tecnopipe.com" class="text-gray-300 hover:text-white">info@tecnopipe.com</a>
-				</p>
+				<p class="mb-2 text-gray-300">Phone: (555) 123-4567</p>
+				<p class="text-gray-300">Email: info@tecnopipe.com</p>
 			</div>
 
 			<!-- Quick Links -->
 			<div>
 				<h3 class="mb-4 text-lg font-semibold sm:text-xl">Quick Links</h3>
 				<ul class="space-y-2">
-					<li><a href="/products" class="text-gray-300 hover:text-white">Products</a></li>
-					<li><a href="/services" class="text-gray-300 hover:text-white">Services</a></li>
-					<li><a href="/about" class="text-gray-300 hover:text-white">About Us</a></li>
-					<li><a href="/contact" class="text-gray-300 hover:text-white">Contact us</a></li>
+					<li><a href="#" class="text-gray-300 hover:text-white">Products</a></li>
+					<li><a href="#" class="text-gray-300 hover:text-white">Services</a></li>
+					<li><a href="#" class="text-gray-300 hover:text-white">About Us</a></li>
+					<li><a href="#" class="text-gray-300 hover:text-white">Contact</a></li>
+					<li><a href="#" class="text-gray-300 hover:text-white">Careers</a></li>
 				</ul>
 			</div>
 
@@ -208,18 +191,26 @@
 				<h3 class="mb-4 text-lg font-semibold sm:text-xl">Connect With Us</h3>
 				<div class="mb-6 flex space-x-4">
 					<!-- Social Media Icons -->
-					<a href="https://www.facebook.com" target="_blank" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10">
+					<div
+						class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10"
+					>
 						<span class="text-xs">FB</span>
-					</a>
-					<a href="https://twitter.com" target="_blank" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10">
+					</div>
+					<div
+						class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10"
+					>
 						<span class="text-xs">TW</span>
-					</a>
-					<a href="https://www.linkedin.com" target="_blank" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10">
+					</div>
+					<div
+						class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10"
+					>
 						<span class="text-xs">IN</span>
-					</a>
-					<a href="https://www.youtube.com" target="_blank" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10">
+					</div>
+					<div
+						class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10"
+					>
 						<span class="text-xs">YT</span>
-					</a>
+					</div>
 				</div>
 
 				<h4 class="mb-2 font-medium">Subscribe to our newsletter</h4>
