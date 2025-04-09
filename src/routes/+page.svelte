@@ -21,8 +21,7 @@
 				class="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 text-center"
 			>
 				<h1 class="mb-4 text-4xl font-bold text-white sm:text-5xl">
-					<span class="block">TECNO</span>
-					<span class="block text-blue-300">PIPE</span>
+					<span class="inline-block">TECNO</span><span class="inline-block text-blue-300">PIPE</span>
 				</h1>
 				<p class="mb-8 max-w-md text-lg text-gray-100">
 					Industry-leading pipe solutions for residential and commercial applications.
