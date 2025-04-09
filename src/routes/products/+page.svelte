@@ -47,6 +47,14 @@
     function setActiveCategory(categoryId) {
       activeCategory = categoryId;
     }
+
+    // Add the missing handleImageError function
+    function handleImageError(e) {
+      // Fallback to a placeholder or hide the image
+      e.target.src = '/images/products-hero.png'; // You can create a placeholder image
+      // Alternatively, you could add a class to style the broken image
+      e.target.classList.add('image-error');
+    }
     
     // Animation for page elements
     let pageLoaded = false;
