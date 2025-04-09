@@ -28,11 +28,11 @@
 					Industry-leading pipe solutions for residential and commercial applications.
 				</p>
 				<div class="flex gap-4">
-					<a href="/services">
+					<a href="/products">
 						<button
 							class="rounded-md bg-blue-700 px-5 py-3 font-medium text-white transition-all hover:bg-blue-800"
 						>
-							Our Services
+							Our Products
 						</button>
 					</a>
 					<a
@@ -71,10 +71,10 @@
 					</p>
 					<div class="flex gap-4">
 						<a
-							href="/services"
+							href="/products"
 							class="rounded-md bg-blue-700 px-6 py-3 font-medium text-white transition-all hover:bg-blue-800 hover:shadow-lg"
 						>
-							Our Services
+							Our Products
 						</a>
 						<a
 							href="/contact"
