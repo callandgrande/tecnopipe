@@ -62,7 +62,7 @@
   <section class="relative bg-gray-900 py-24 md:py-32">
     <div class="absolute inset-0 z-0 opacity-30">
         <img 
-        src="/images/products-hero.jpg" 
+        src="/images/products-hero.png" 
         alt="Industrial pipes" 
         class="h-full w-full object-cover" 
         on:error={handleImageError}
