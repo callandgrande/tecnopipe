@@ -54,12 +54,14 @@
 >
 	<div class="container mx-auto flex items-center justify-between px-4 py-4 sm:px-6">
 		<div class="logo">
-			<!-- Replace with your logo -->
-			<div
-				class={`flex h-10 w-40 items-center justify-center ${isTransparent ? 'text-white' : 'bg-gray-200 text-gray-700'}`}
-			>
-				Logo Placeholder
-			</div>
+			<!-- Logo with home link -->
+			<a href="/" class="block">
+				<div
+					class={`flex h-10 w-40 items-center justify-center ${isTransparent ? 'text-white' : 'bg-gray-200 text-gray-700'}`}
+				>
+					Logo Placeholder
+				</div>
+			</a>
 		</div>
 
 		<!-- Mobile menu button -->
@@ -86,35 +88,35 @@
 			<ul class="flex space-x-6 lg:space-x-8">
 				<li>
 					<a
-						href="#"
+						href="/products"
 						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
 						>Products</a
 					>
 				</li>
 				<li>
 					<a
-						href="#"
+						href="/orders"
 						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
-						>Sales</a
+						>Orders</a
 					>
 				</li>
 				<li>
 					<a
-						href="#"
+						href="/hvac"
 						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
 						>HVAC</a
 					>
 				</li>
 				<li>
 					<a
-						href="#"
+						href="/maintenance"
 						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
 						>Maintenance</a
 					>
 				</li>
 				<li>
 					<a
-						href="#"
+						href="/about"
 						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
 						>About Us</a
 					>
@@ -130,35 +132,42 @@
 				<ul class="flex flex-col">
 					<li>
 						<a
-							href="#"
+							href="/"
+							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
+							onclick={closeMenu}>Home</a
+						>
+					</li>
+					<li>
+						<a
+							href="/products"
 							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
 							onclick={closeMenu}>Products</a
 						>
 					</li>
 					<li>
 						<a
-							href="#"
+							href="/orders"
 							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
-							onclick={closeMenu}>Sales</a
+							onclick={closeMenu}>Orders</a
 						>
 					</li>
 					<li>
 						<a
-							href="#"
+							href="/hvac"
 							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
 							onclick={closeMenu}>HVAC</a
 						>
 					</li>
 					<li>
 						<a
-							href="#"
+							href="/maintenance"
 							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
 							onclick={closeMenu}>Maintenance</a
 						>
 					</li>
 					<li>
 						<a
-							href="#"
+							href="/about"
 							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
 							onclick={closeMenu}>About Us</a
 						>
@@ -180,15 +189,15 @@
 		<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
 			<!-- Company Info -->
 			<div>
-				<h3 class="mb-4 text-lg font-semibold sm:text-xl">TecnoPipe Solutions</h3>
+				<h3 class="mb-4 text-lg font-semibold sm:text-xl">TecnoPipe</h3>
 				<p class="mb-2 text-gray-300">123 Industry Drive</p>
 				<p class="mb-2 text-gray-300">Manufacturing District</p>
-				<p class="mb-2 text-gray-300">Business City, BC 12345</p>
+				<p class="mb-2 text-gray-300">Quito, Ecuador 12345</p>
 				<p class="mb-2 text-gray-300">
-					<a href="tel:+15551234567" class="text-gray-300 hover:text-white">(555) 123-4567</a>
+					<a href="tel:(+593) 99-733-1443" class="text-gray-300 hover:text-white">(+593) 99-733-1443</a>
 				</p>
 				<p class="text-gray-300">
-					<a href="mailto:info@tecnopipe.com" class="text-gray-300 hover:text-white">info@tecnopipe.com</a>
+					<a href="mailto:eduardoamador@eduardoamador.com" class="text-gray-300 hover:text-white">eduardoamador@eduardoamador.com</a>
 				</p>
 			</div>
 
@@ -196,10 +205,12 @@
 			<div>
 				<h3 class="mb-4 text-lg font-semibold sm:text-xl">Quick Links</h3>
 				<ul class="space-y-2">
+					<li><a href="/" class="text-gray-300 hover:text-white">Home</a></li>
 					<li><a href="/products" class="text-gray-300 hover:text-white">Products</a></li>
-					<li><a href="/services" class="text-gray-300 hover:text-white">Services</a></li>
+					<li><a href="/orders" class="text-gray-300 hover:text-white">Orders</a></li>
+					<li><a href="/hvac" class="text-gray-300 hover:text-white">HVAC</a></li>
+					<li><a href="/maintenance" class="text-gray-300 hover:text-white">Maintenance</a></li>
 					<li><a href="/about" class="text-gray-300 hover:text-white">About Us</a></li>
-					<li><a href="/contact" class="text-gray-300 hover:text-white">Contact us</a></li>
 				</ul>
 			</div>
 
@@ -211,8 +222,8 @@
 					<a href="https://www.facebook.com" target="_blank" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10">
 						<span class="text-xs">FB</span>
 					</a>
-					<a href="https://twitter.com" target="_blank" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10">
-						<span class="text-xs">TW</span>
+					<a href="https://www.instagram.com/tecnopipe_ec/?hl=en" target="_blank" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10">
+						<span class="text-xs">IG</span>
 					</a>
 					<a href="https://www.linkedin.com" target="_blank" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10">
 						<span class="text-xs">IN</span>
@@ -227,7 +238,7 @@
 		</div>
 
 		<div class="mt-6 border-t border-gray-700 pt-6 text-center text-gray-400 sm:mt-8 sm:pt-8">
-			<p>&copy; 2025 Tecno Pipe Solutions. All rights reserved.</p>
+			<p>&copy; 2025 TecnoPipe. All rights reserved.</p>
 		</div>
 	</div>
 </footer>
