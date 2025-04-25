@@ -21,18 +21,17 @@
 				class="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 text-center"
 			>
 				<h1 class="mb-4 text-4xl font-bold text-white sm:text-5xl">
-					<span class="block">TECNO</span>
-					<span class="block text-blue-300">PIPE</span>
+					<span class="inline-block">TECNO</span><span class="inline-block text-blue-300">PIPE</span>
 				</h1>
 				<p class="mb-8 max-w-md text-lg text-gray-100">
 					Industry-leading pipe solutions for residential and commercial applications.
 				</p>
 				<div class="flex gap-4">
-					<a href="/services">
+					<a href="/products">
 						<button
 							class="rounded-md bg-blue-700 px-5 py-3 font-medium text-white transition-all hover:bg-blue-800"
 						>
-							Our Services
+							Our Products
 						</button>
 					</a>
 					<a
@@ -71,10 +70,10 @@
 					</p>
 					<div class="flex gap-4">
 						<a
-							href="/services"
+							href="/products"
 							class="rounded-md bg-blue-700 px-6 py-3 font-medium text-white transition-all hover:bg-blue-800 hover:shadow-lg"
 						>
-							Our Services
+							Our Products
 						</a>
 						<a
 							href="/contact"
