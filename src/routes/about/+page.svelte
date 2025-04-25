@@ -6,7 +6,7 @@
 	const teamMembers = [
 		{
 			name: 'Eduardo Amador',
-			position: 'CEO',
+			position: 'Gerente General',
 			image: '/api/placeholder/300/300'
 		},
 		{

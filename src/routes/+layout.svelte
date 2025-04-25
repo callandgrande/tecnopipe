@@ -59,7 +59,7 @@
 				<div
 					class={`flex h-10 w-40 items-center justify-center ${isTransparent ? 'text-white' : 'bg-gray-200 text-gray-700'}`}
 				>
-					Logo Placeholder
+				<img src="/images/tecnopipe-logo.png" alt="TecnoPipeLogo" class="h-10" />
 				</div>
 			</a>
 		</div>
@@ -190,11 +190,11 @@
 			<!-- Company Info -->
 			<div>
 				<h3 class="mb-4 text-lg font-semibold sm:text-xl">TecnoPipe</h3>
-				<p class="mb-2 text-gray-300">123 Industry Drive</p>
-				<p class="mb-2 text-gray-300">Manufacturing District</p>
-				<p class="mb-2 text-gray-300">Quito, Ecuador 12345</p>
+				<p class="mb-2 text-gray-300">Av. NNUU E230 y Núñez de Vela</p>
+				<p class="mb-2 text-gray-300">Edificio Metropolitano, Of. 309</p>
+				<p class="mb-2 text-gray-300">Quito, Ecuador</p>
 				<p class="mb-2 text-gray-300">
-					<a href="tel:(+593) 99-733-1443" class="text-gray-300 hover:text-white">(+593) 99-733-1443</a>
+					<a href="tel:(+593) 98-966-0516" class="text-gray-300 hover:text-white">(+593) 98-966-0516</a>
 				</p>
 				<p class="text-gray-300">
 					<a href="mailto:eduardoamador@eduardoamador.com" class="text-gray-300 hover:text-white">eduardoamador@eduardoamador.com</a>
