@@ -1,0 +1,39 @@
+{
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "hvac": "HVAC Systems",
+      "contact": "Contact Us"
+    },
+    "hvac": {
+      "hero": {
+        "title": "HVAC Systems",
+        "subtitle": "Advanced climate control solutions for comfort and efficiency"
+      },
+      "intro": {
+        "title": "CLIMATE COMFORT EXPERTS",
+        "description": "We specialize in the design, installation, and maintenance of comprehensive HVAC systems, offering top-quality equipment and reliable service. With expertise in specialized applications including hospital environments, mechanical ventilation, control systems, and hydronic solutions, we ensure optimal performance and comfort in every space."
+      },
+      "coreServices": {
+        "title": "OUR CORE SERVICES",
+        "design": {
+          "title": "Design",
+          "description": "Custom HVAC solutions engineered specifically for your space and requirements"
+        },
+        "installation": {
+          "title": "Installation",
+          "description": "Professional implementation by certified technicians with minimal disruption"
+        },
+        "maintenance": {
+          "title": "Maintenance",
+          "description": "Regular service plans to ensure optimal performance and extend equipment life"
+        }
+      },
+      "cta": {
+        "title": "Ready For a Better Climate Solution?",
+        "description": "Contact us today for a consultation and discover how our HVAC expertise can improve comfort, air quality, and energy efficiency in your space.",
+        "button1": "Schedule a Consultation",
+        "button2": "Call"
+      }
+    }
+  }

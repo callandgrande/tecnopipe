@@ -1,0 +1,39 @@
+{
+    "nav": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "hvac": "Sistemas HVAC",
+      "contact": "Contáctenos"
+    },
+    "hvac": {
+      "hero": {
+        "title": "Sistemas HVAC",
+        "subtitle": "Soluciones avanzadas de control climático para confort y eficiencia"
+      },
+      "intro": {
+        "title": "EXPERTOS EN CONFORT CLIMÁTICO",
+        "description": "Nos especializamos en el diseño, instalación y mantenimiento de sistemas HVAC completos, ofreciendo equipos de alta calidad y servicio confiable. Con experiencia en aplicaciones especializadas, incluyendo entornos hospitalarios, ventilación mecánica, sistemas de control y soluciones hidrónicas, garantizamos un rendimiento óptimo y confort en cada espacio."
+      },
+      "coreServices": {
+        "title": "NUESTROS SERVICIOS PRINCIPALES",
+        "design": {
+          "title": "Diseño",
+          "description": "Soluciones HVAC personalizadas diseñadas específicamente para su espacio y requisitos"
+        },
+        "installation": {
+          "title": "Instalación",
+          "description": "Implementación profesional por técnicos certificados con mínima interrupción"
+        },
+        "maintenance": {
+          "title": "Mantenimiento",
+          "description": "Planes de servicio regulares para garantizar un rendimiento óptimo y extender la vida útil del equipo"
+        }
+      },
+      "cta": {
+        "title": "¿Listo para una Mejor Solución Climática?",
+        "description": "Contáctenos hoy para una consulta y descubra cómo nuestra experiencia en HVAC puede mejorar el confort, la calidad del aire y la eficiencia energética en su espacio.",
+        "button1": "Programar una Consulta",
+        "button2": "Llamar"
+      }
+    }
+  }

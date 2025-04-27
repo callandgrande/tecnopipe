@@ -1,0 +1,39 @@
+{
+    "nav": {
+      "home": "Startseite",
+      "services": "Dienstleistungen",
+      "hvac": "HVAC-Systeme",
+      "contact": "Kontakt"
+    },
+    "hvac": {
+      "hero": {
+        "title": "HVAC-Systeme",
+        "subtitle": "Fortschrittliche Klimatisierungslösungen für Komfort und Effizienz"
+      },
+      "intro": {
+        "title": "EXPERTEN FÜR KLIMAKOMFORT",
+        "description": "Wir sind spezialisiert auf die Planung, Installation und Wartung umfassender HVAC-Systeme und bieten hochwertige Geräte und zuverlässigen Service. Mit Expertise in spezialisierten Anwendungen, einschließlich Krankenhausumgebungen, mechanische Lüftung, Steuerungssysteme und hydronische Lösungen, gewährleisten wir optimale Leistung und Komfort in jedem Raum."
+      },
+      "coreServices": {
+        "title": "UNSERE KERNDIENSTLEISTUNGEN",
+        "design": {
+          "title": "Planung",
+          "description": "Maßgeschneiderte HVAC-Lösungen, die speziell für Ihren Raum und Ihre Anforderungen entwickelt wurden"
+        },
+        "installation": {
+          "title": "Installation",
+          "description": "Professionelle Implementierung durch zertifizierte Techniker mit minimaler Unterbrechung"
+        },
+        "maintenance": {
+          "title": "Wartung",
+          "description": "Regelmäßige Servicepläne zur Gewährleistung optimaler Leistung und zur Verlängerung der Lebensdauer der Geräte"
+        }
+      },
+      "cta": {
+        "title": "Bereit für eine bessere Klimalösung?",
+        "description": "Kontaktieren Sie uns noch heute für eine Beratung und entdecken Sie, wie unsere HVAC-Expertise den Komfort, die Luftqualität und die Energieeffizienz in Ihrem Raum verbessern kann.",
+        "button1": "Beratungstermin vereinbaren",
+        "button2": "Anrufen"
+      }
+    }
+  }
