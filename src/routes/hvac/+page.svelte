@@ -3,52 +3,107 @@
 	// HVAC services data
 	const hvacServices = [
 		{
-			title: "System Design",
-			description: "Custom HVAC solutions designed specifically for your space and requirements",
+			title: "Design",
+			description: "Custom HVAC solutions engineered specifically for your space and requirements",
 			icon: "📐" // You can replace with actual icon components later
 		},
 		{
 			title: "Installation",
-			description: "Professional installation by certified technicians with minimal disruption",
+			description: "Professional implementation by certified technicians with minimal disruption",
 			icon: "🔧"
 		},
 		{
 			title: "Maintenance",
 			description: "Regular service plans to ensure optimal performance and extend equipment life",
 			icon: "⚙️"
-		},
-		{
-			title: "Repairs",
-			description: "Fast, reliable repairs to minimize downtime and restore comfort quickly",
-			icon: "🛠️"
-		},
-		{
-			title: "Energy Efficiency",
-			description: "Solutions to improve efficiency and reduce operational costs",
-			icon: "⚡"
-		},
-		{
-			title: "Air Quality",
-			description: "Advanced filtration and purification systems for healthier indoor environments",
-			icon: "💨"
 		}
 	];
 
-	// HVAC equipment types
-	const equipmentTypes = [
+	// HVAC installation specialties
+	const installationSpecialties = [
 		{
-			name: "Commercial Systems",
-			features: ["Rooftop Units", "VRF/VRV Systems", "Chillers", "Central Air Handlers"]
+			name: "HVAC Applied to Hospitals",
+			features: [
+				"Clean Room Technology", 
+				"Isolation Rooms", 
+				"Temperature/Humidity Control", 
+				"Air Quality Management"
+			]
 		},
 		{
-			name: "Residential Systems",
-			features: ["Split Systems", "Ductless Mini-Splits", "Heat Pumps", "Smart Thermostats"]
+			name: "Mechanical Ventilation",
+			features: [
+				"Indoor Air Quality Systems", 
+				"Industrial Ventilation", 
+				"Air Distribution Design", 
+				"Exhaust Solutions"
+			]
 		},
 		{
-			name: "Industrial Solutions",
-			features: ["Process Cooling", "Computer Room AC", "Clean Room Systems", "Industrial Ventilation"]
+			name: "Control and Automation",
+			features: [
+				"Smart Building Integration", 
+				"BMS Systems", 
+				"Remote Monitoring", 
+				"Energy Management"
+			]
+		},
+		{
+			name: "Hydronic Systems",
+			features: [
+				"Chilled Water Systems", 
+				"Hot Water Distribution", 
+				"Radiant Heating/Cooling", 
+				"Water-based HVAC"
+			]
 		}
 	];
+
+	// Service benefits
+	const serviceBenefits = {
+		design: [
+			{
+				title: "Custom Engineering",
+				description: "Tailored solutions based on your specific needs, space constraints, and budget"
+			},
+			{
+				title: "Energy Modeling",
+				description: "Advanced simulation to predict and optimize system performance and efficiency"
+			},
+			{
+				title: "Technical Documentation",
+				description: "Comprehensive plans, specifications, and documentation for your project"
+			}
+		],
+		installation: [
+			{
+				title: "Certified Technicians",
+				description: "Experienced professionals with specific training for each installation specialty"
+			},
+			{
+				title: "Quality Materials",
+				description: "Premium components from trusted manufacturers with robust warranties"
+			},
+			{
+				title: "Project Management",
+				description: "Dedicated oversight ensuring timely completion with minimal disruption"
+			}
+		],
+		maintenance: [
+			{
+				title: "Preventive Programs",
+				description: "Scheduled maintenance to prevent costly breakdowns and extend system life"
+			},
+			{
+				title: "Emergency Service",
+				description: "Rapid response teams available when unexpected issues arise"
+			},
+			{
+				title: "Performance Optimization",
+				description: "Regular fine-tuning to maintain efficiency and reduce operational costs"
+			}
+		]
+	};
 </script>
 
 <svelte:head>
@@ -77,7 +132,7 @@
 			
 			<div class="mb-10 space-y-6 text-gray-700">
 				<p class="text-lg leading-relaxed">
-					We specialize in the design, installation, and maintenance of air conditioning systems, offering top-quality equipment and reliable service. From tailored solutions to professional after-sales support, we ensure optimal performance and comfort in every space.
+					We specialize in the design, installation, and maintenance of comprehensive HVAC systems, offering top-quality equipment and reliable service. With expertise in specialized applications including hospital environments, mechanical ventilation, control systems, and hydronic solutions, we ensure optimal performance and comfort in every space.
 				</p>
 			</div>
 			
@@ -91,16 +146,16 @@
 	</div>
 </section>
 
-<!-- Services Grid -->
+<!-- Core Services Grid -->
 <section class="bg-gray-100 py-12 md:py-20">
 	<div class="container mx-auto px-4 sm:px-6">
-		<h2 class="mb-10 text-center text-2xl font-medium md:text-3xl">OUR HVAC SERVICES</h2>
+		<h2 class="mb-10 text-center text-2xl font-medium md:text-3xl">OUR CORE SERVICES</h2>
 		
-		<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+		<div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
 			{#each hvacServices as service}
-				<div class="rounded-lg bg-white p-8 shadow-sm transition-all hover:shadow-md">
-					<div class="mb-4 text-3xl">{service.icon}</div>
-					<h3 class="mb-3 text-xl font-medium">{service.title}</h3>
+				<div class="rounded-lg bg-white p-8 shadow-md transition-all hover:-translate-y-1 hover:shadow-lg">
+					<div class="mb-6 text-4xl text-blue-700">{service.icon}</div>
+					<h3 class="mb-4 text-2xl font-medium">{service.title}</h3>
 					<p class="text-gray-700">{service.description}</p>
 				</div>
 			{/each}
@@ -108,86 +163,292 @@
 	</div>
 </section>
 
-<!-- Equipment Types -->
-<section class="py-12 md:py-20">
+<!-- DESIGN Section -->
+<section id="design" class="py-12 md:py-20">
 	<div class="container mx-auto px-4 sm:px-6">
-		<h2 class="mb-10 text-center text-2xl font-medium md:text-3xl">QUALITY EQUIPMENT</h2>
-		
-		<div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-			{#each equipmentTypes as equipment}
-				<div class="rounded-lg border border-gray-200 bg-white p-6">
-					<h3 class="mb-4 text-center text-xl font-medium">{equipment.name}</h3>
-					<ul class="space-y-2">
-						{#each equipment.features as feature}
-							<li class="flex items-center">
-								<span class="mr-2 text-blue-700">•</span>
-								<span>{feature}</span>
-							</li>
-						{/each}
-					</ul>
-				</div>
-			{/each}
+		<div class="mb-12 flex flex-col items-center justify-center">
+			<h2 class="mb-6 text-center text-2xl font-medium md:text-3xl">DESIGN</h2>
+			<div class="mx-auto h-1 w-24 bg-blue-700"></div>
 		</div>
 		
-		<div class="mt-10 text-center">
-			<p class="mx-auto mb-6 max-w-2xl text-gray-700">
-				We partner with leading manufacturers to provide the highest quality HVAC equipment with industry-leading warranties and energy efficiency ratings.
-			</p>
+		<div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+			<div>
+				<p class="mb-6 text-lg text-gray-700">
+					Our design process begins with understanding your specific needs, analyzing your space, and developing a custom HVAC solution that optimizes both comfort and efficiency. We utilize advanced modeling tools to ensure perfect system sizing and performance.
+				</p>
+				
+				<div class="space-y-6">
+					{#each serviceBenefits.design as benefit}
+						<div class="rounded-lg border-l-4 border-blue-700 bg-gray-50 p-4 shadow-sm">
+							<h4 class="mb-2 text-lg font-medium">{benefit.title}</h4>
+							<p class="text-gray-700">{benefit.description}</p>
+						</div>
+					{/each}
+				</div>
+			</div>
+			
+			<div class="flex items-center justify-center">
+				<div class="h-full w-full overflow-hidden rounded-lg bg-gray-200">
+					<div class="flex h-full w-full items-center justify-center text-gray-500">
+						HVAC Design Illustration
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Benefits Section -->
-<section class="bg-gray-100 py-12 md:py-20">
+<!-- INSTALLATION Section with Subsections -->
+<section id="installation" class="bg-gray-100 py-12 md:py-20">
 	<div class="container mx-auto px-4 sm:px-6">
-		<h2 class="mb-10 text-center text-2xl font-medium md:text-3xl">WHY CHOOSE OUR HVAC SOLUTIONS</h2>
+		<div class="mb-12 flex flex-col items-center justify-center">
+			<h2 class="mb-6 text-center text-2xl font-medium md:text-3xl">INSTALLATION</h2>
+			<div class="mx-auto h-1 w-24 bg-blue-700"></div>
+		</div>
 		
-		<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-			<!-- Left column -->
-			<div>
-				<div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-					<h3 class="mb-3 text-xl font-medium">Energy Efficiency</h3>
-					<p class="text-gray-700">
-						Our systems are designed to maximize energy efficiency, reducing utility costs while minimizing environmental impact. We select equipment with high SEER ratings and implement smart control systems to optimize performance.
-					</p>
-				</div>
-				
-				<div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-					<h3 class="mb-3 text-xl font-medium">Advanced Technology</h3>
-					<p class="text-gray-700">
-						We incorporate the latest HVAC innovations, including smart thermostats, zoning systems, and remote monitoring capabilities that give you greater control and convenience.
-					</p>
-				</div>
-				
-				<div class="rounded-lg bg-white p-6 shadow-sm">
-					<h3 class="mb-3 text-xl font-medium">Certified Expertise</h3>
-					<p class="text-gray-700">
-						Our technicians are fully certified and regularly trained on the latest equipment and techniques, ensuring proper installation and service that extends the life of your system.
-					</p>
+		<div class="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+			<div class="flex items-center justify-center">
+				<div class="h-full w-full overflow-hidden rounded-lg bg-gray-200">
+					<div class="flex h-full w-full items-center justify-center text-gray-500">
+						HVAC Installation Image
+					</div>
 				</div>
 			</div>
 			
-			<!-- Right column -->
 			<div>
-				<div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-					<h3 class="mb-3 text-xl font-medium">Improved Air Quality</h3>
-					<p class="text-gray-700">
-						Beyond temperature control, our systems can improve indoor air quality with advanced filtration, humidity control, and ventilation solutions that create healthier living and working environments.
-					</p>
+				<p class="mb-6 text-lg text-gray-700">
+					Our installation teams are certified specialists with extensive experience in a wide range of HVAC applications. We handle everything from standard commercial and residential installations to complex specialized environments like healthcare facilities.
+				</p>
+				
+				<div class="space-y-6">
+					{#each serviceBenefits.installation as benefit}
+						<div class="rounded-lg border-l-4 border-blue-700 bg-white p-4 shadow-sm">
+							<h4 class="mb-2 text-lg font-medium">{benefit.title}</h4>
+							<p class="text-gray-700">{benefit.description}</p>
+						</div>
+					{/each}
+				</div>
+			</div>
+		</div>
+		
+		<!-- Installation Specialties -->
+		<div class="mt-16">
+			<h3 class="mb-10 text-center text-xl font-medium md:text-2xl">INSTALLATION SPECIALTIES</h3>
+			
+			<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+				{#each installationSpecialties as specialty}
+					<div class="group rounded-lg bg-white p-6 shadow-md transition-all hover:-translate-y-1 hover:shadow-lg">
+						<h4 class="mb-4 border-b border-gray-200 pb-2 text-center text-lg font-medium text-blue-700 group-hover:text-blue-800">{specialty.name}</h4>
+						<ul class="space-y-2">
+							{#each specialty.features as feature}
+								<li class="flex items-center">
+									<span class="mr-2 text-blue-700">•</span>
+									<span class="text-gray-700">{feature}</span>
+								</li>
+							{/each}
+						</ul>
+					</div>
+				{/each}
+			</div>
+		</div>
+		
+		<!-- Specialty Details Sections -->
+		<!-- Hospital HVAC -->
+		<div class="mt-20">
+			<div class="rounded-lg bg-white p-8 shadow-md">
+				<h3 class="mb-6 text-center text-xl font-medium text-blue-700 md:text-2xl">HVAC APPLIED TO HOSPITALS</h3>
+				
+				<div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+					<div>
+						<p class="mb-6 text-gray-700">
+							Hospital environments demand specialized HVAC solutions that maintain precise temperature, humidity, and air quality conditions. Our systems are designed to meet strict healthcare standards while ensuring patient comfort and staff productivity.
+						</p>
+						
+						<div class="space-y-4">
+							<div class="rounded-lg bg-blue-50 p-4">
+								<h4 class="mb-2 font-medium">Infection Control</h4>
+								<p class="text-gray-700">Advanced filtration and pressure relationships that minimize airborne pathogen transmission.</p>
+							</div>
+							
+							<div class="rounded-lg bg-blue-50 p-4">
+								<h4 class="mb-2 font-medium">Critical Areas</h4>
+								<p class="text-gray-700">Specialized solutions for operating rooms, isolation rooms, and other sensitive healthcare spaces.</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="flex items-center justify-center">
+						<div class="h-64 w-full overflow-hidden rounded-lg bg-gray-200">
+							<div class="flex h-full w-full items-center justify-center text-gray-500">
+								Hospital HVAC Illustration
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Mechanical Ventilation -->
+		<div class="mt-8">
+			<div class="rounded-lg bg-white p-8 shadow-md">
+				<h3 class="mb-6 text-center text-xl font-medium text-blue-700 md:text-2xl">MECHANICAL VENTILATION</h3>
+				
+				<div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+					<div class="flex items-center justify-center md:order-2">
+						<div class="h-64 w-full overflow-hidden rounded-lg bg-gray-200">
+							<div class="flex h-full w-full items-center justify-center text-gray-500">
+								Ventilation System Illustration
+							</div>
+						</div>
+					</div>
+					
+					<div class="md:order-1">
+						<p class="mb-6 text-gray-700">
+							Our mechanical ventilation solutions ensure proper air exchange, removing contaminants and providing fresh air throughout your facility. From basic exhaust systems to complex air handling units, we design and install ventilation that improves comfort and health.
+						</p>
+						
+						<div class="space-y-4">
+							<div class="rounded-lg bg-blue-50 p-4">
+								<h4 class="mb-2 font-medium">IAQ Optimization</h4>
+								<p class="text-gray-700">Solutions that enhance indoor air quality through proper ventilation rates and filtration.</p>
+							</div>
+							
+							<div class="rounded-lg bg-blue-50 p-4">
+								<h4 class="mb-2 font-medium">Energy Recovery</h4>
+								<p class="text-gray-700">Energy-efficient ventilation using heat recovery technology to minimize thermal losses.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Control and Automation -->
+		<div class="mt-8">
+			<div class="rounded-lg bg-white p-8 shadow-md">
+				<h3 class="mb-6 text-center text-xl font-medium text-blue-700 md:text-2xl">CONTROL AND AUTOMATION</h3>
+				
+				<div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+					<div>
+						<p class="mb-6 text-gray-700">
+							Modern HVAC systems require sophisticated controls to maximize performance. We implement cutting-edge automation solutions that provide precise management of your climate systems while offering intuitive interfaces for operators and occupants.
+						</p>
+						
+						<div class="space-y-4">
+							<div class="rounded-lg bg-blue-50 p-4">
+								<h4 class="mb-2 font-medium">Building Management Systems</h4>
+								<p class="text-gray-700">Integrated control platforms that manage all aspects of your building's mechanical systems.</p>
+							</div>
+							
+							<div class="rounded-lg bg-blue-50 p-4">
+								<h4 class="mb-2 font-medium">IoT Integration</h4>
+								<p class="text-gray-700">Smart sensors and connected devices that enable real-time monitoring and data-driven optimization.</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="flex items-center justify-center">
+						<div class="h-64 w-full overflow-hidden rounded-lg bg-gray-200">
+							<div class="flex h-full w-full items-center justify-center text-gray-500">
+								Control Systems Illustration
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Hydronic System -->
+		<div class="mt-8">
+			<div class="rounded-lg bg-white p-8 shadow-md">
+				<h3 class="mb-6 text-center text-xl font-medium text-blue-700 md:text-2xl">HYDRONIC SYSTEM</h3>
+				
+				<div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+					<div class="flex items-center justify-center md:order-2">
+						<div class="h-64 w-full overflow-hidden rounded-lg bg-gray-200">
+							<div class="flex h-full w-full items-center justify-center text-gray-500">
+								Hydronic System Illustration
+							</div>
+						</div>
+					</div>
+					
+					<div class="md:order-1">
+						<p class="mb-6 text-gray-700">
+							Water-based heating and cooling systems offer superior efficiency and comfort. Our hydronic solutions range from chilled beams to radiant floors, providing even temperatures and silent operation for a variety of applications.
+						</p>
+						
+						<div class="space-y-4">
+							<div class="rounded-lg bg-blue-50 p-4">
+								<h4 class="mb-2 font-medium">Water Distribution</h4>
+								<p class="text-gray-700">Precisely engineered piping networks that deliver heating and cooling where needed with minimal energy loss.</p>
+							</div>
+							
+							<div class="rounded-lg bg-blue-50 p-4">
+								<h4 class="mb-2 font-medium">Terminal Units</h4>
+								<p class="text-gray-700">Fan coils, chilled beams, and radiant panels that efficiently transfer energy from water to air.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- MAINTENANCE Section -->
+<section id="maintenance" class="py-12 md:py-20">
+	<div class="container mx-auto px-4 sm:px-6">
+		<div class="mb-12 flex flex-col items-center justify-center">
+			<h2 class="mb-6 text-center text-2xl font-medium md:text-3xl">MAINTENANCE</h2>
+			<div class="mx-auto h-1 w-24 bg-blue-700"></div>
+		</div>
+		
+		<div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+			<div class="flex items-center justify-center">
+				<div class="h-full w-full overflow-hidden rounded-lg bg-gray-200">
+					<div class="flex h-full w-full items-center justify-center text-gray-500">
+						Maintenance Service Illustration
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<p class="mb-6 text-lg text-gray-700">
+					Keep your HVAC investment performing at its best with our comprehensive maintenance programs. Regular service prevents costly breakdowns, extends equipment life, and ensures your systems operate at peak efficiency year-round.
+				</p>
+				
+				<div class="space-y-6">
+					{#each serviceBenefits.maintenance as benefit}
+						<div class="rounded-lg border-l-4 border-blue-700 bg-gray-50 p-4 shadow-sm">
+							<h4 class="mb-2 text-lg font-medium">{benefit.title}</h4>
+							<p class="text-gray-700">{benefit.description}</p>
+						</div>
+					{/each}
 				</div>
 				
-				<div class="mb-8 rounded-lg bg-white p-6 shadow-sm">
-					<h3 class="mb-3 text-xl font-medium">Custom Solutions</h3>
-					<p class="text-gray-700">
-						We don't believe in one-size-fits-all. Our approach involves a thorough assessment of your space and requirements to design a system that perfectly meets your needs and budget.
+				<div class="mt-8 rounded-lg bg-blue-50 p-6">
+					<h4 class="mb-3 text-lg font-medium">Maintenance Plans</h4>
+					<p class="mb-4 text-gray-700">
+						Choose from our flexible maintenance packages tailored to your system's complexity and your operational requirements:
 					</p>
-				</div>
-				
-				<div class="rounded-lg bg-white p-6 shadow-sm">
-					<h3 class="mb-3 text-xl font-medium">Reliable Support</h3>
-					<p class="text-gray-700">
-						With maintenance agreements and prompt service, we ensure your HVAC system continues to perform optimally year-round. Our team is always ready to assist with any issues that arise.
-					</p>
+					<ul class="space-y-2 text-gray-700">
+						<li class="flex items-start">
+							<span class="mr-2 text-blue-700">✓</span>
+							<span>Quarterly inspections and tune-ups</span>
+						</li>
+						<li class="flex items-start">
+							<span class="mr-2 text-blue-700">✓</span>
+							<span>Priority emergency service response</span>
+						</li>
+						<li class="flex items-start">
+							<span class="mr-2 text-blue-700">✓</span>
+							<span>Detailed performance reports</span>
+						</li>
+						<li class="flex items-start">
+							<span class="mr-2 text-blue-700">✓</span>
+							<span>Discounted repair services</span>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -195,7 +456,7 @@
 </section>
 
 <!-- Process Section -->
-<section class="py-12 md:py-20">
+<section class="bg-gray-100 py-12 md:py-20">
 	<div class="container mx-auto px-4 sm:px-6">
 		<h2 class="mb-10 text-center text-2xl font-medium md:text-3xl">OUR APPROACH</h2>
 		
@@ -256,43 +517,6 @@
 								We provide regular maintenance to ensure continued efficiency and extend the life of your investment.
 							</p>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- Testimonials -->
-<section class="bg-gray-100 py-12 md:py-20">
-	<div class="container mx-auto px-4 sm:px-6">
-		<h2 class="mb-10 text-center text-2xl font-medium md:text-3xl">WHAT OUR CLIENTS SAY</h2>
-		
-		<div class="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
-			<!-- Testimonial 1 -->
-			<div class="rounded-lg bg-white p-6 shadow-sm">
-				<p class="mb-4 italic text-gray-700">
-					"The TecnoPipe team designed and installed a complete HVAC system for our office building. The improvement in comfort and air quality has been remarkable, and our energy costs have decreased significantly."
-				</p>
-				<div class="flex items-center">
-					<div class="h-10 w-10 rounded-full bg-gray-300"></div>
-					<div class="ml-3">
-						<p class="font-medium">Carlos Mendoza</p>
-						<p class="text-sm text-gray-600">Office Building Manager</p>
-					</div>
-				</div>
-			</div>
-			
-			<!-- Testimonial 2 -->
-			<div class="rounded-lg bg-white p-6 shadow-sm">
-				<p class="mb-4 italic text-gray-700">
-					"We've been using TecnoPipe for our hotel's HVAC maintenance for three years now. Their responsiveness and technical expertise have been invaluable in ensuring our guests' comfort year-round."
-				</p>
-				<div class="flex items-center">
-					<div class="h-10 w-10 rounded-full bg-gray-300"></div>
-					<div class="ml-3">
-						<p class="font-medium">Maria Gonzalez</p>
-						<p class="text-sm text-gray-600">Hotel Operations Director</p>
 					</div>
 				</div>
 			</div>
