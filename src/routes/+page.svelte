@@ -186,6 +186,84 @@
 	</div>
 </section>
 
+<!-- AI Innovation Section -->
+<section class="ai-innovation bg-white py-12 md:py-20">
+	<div class="container mx-auto px-4 sm:px-6">
+		<h2 class="mb-8 text-center text-xl font-medium sm:text-2xl md:mb-10">
+			INNOVATION THROUGH ARTIFICIAL INTELLIGENCE
+		</h2>
+		
+		<div class="mx-auto grid max-w-6xl gap-10 md:grid-cols-2 md:items-center">
+			<!-- Left Column: Image -->
+			<div class="flex items-center justify-center">
+				<div class="relative h-72 w-full max-w-lg overflow-hidden rounded-lg bg-blue-50 shadow-md">
+					<div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-blue-700/20"></div>
+					<div class="relative flex h-full w-full flex-col items-center justify-center p-6 text-center">
+						<div class="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-blue-100">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+							</svg>
+						</div>
+						<h3 class="mb-2 text-xl font-medium text-blue-800">Smart Solutions</h3>
+						<p class="text-blue-700">Harnessing the power of AI to optimize resource usage and reduce environmental impact.</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Right Column: Content -->
+			<div class="space-y-6">
+				<h3 class="text-2xl font-medium text-gray-800">Pioneering AI for a Sustainable Future</h3>
+				<p class="text-gray-700">
+					At TecnoPipe, we're leveraging cutting-edge artificial intelligence to revolutionize how pipe systems interact with the environment. Our AI-powered solutions optimize water flow, detect leaks before they become problematic, and reduce energy consumption across entire networks.
+				</p>
+				<div class="space-y-4">
+					<div class="flex items-start">
+						<div class="mr-4 mt-1 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+						</div>
+						<div>
+							<h4 class="font-medium text-gray-800">Predictive Maintenance</h4>
+							<p class="text-sm text-gray-600">Our AI algorithms analyze data from sensors embedded in pipe systems to predict maintenance needs before failures occur, reducing waste and extending system lifespan.</p>
+						</div>
+					</div>
+					<div class="flex items-start">
+						<div class="mr-4 mt-1 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+						</div>
+						<div>
+							<h4 class="font-medium text-gray-800">Resource Optimization</h4>
+							<p class="text-sm text-gray-600">Smart flow management uses machine learning to reduce energy consumption by up to 30% while maintaining optimal performance in residential and commercial buildings.</p>
+						</div>
+					</div>
+					<div class="flex items-start">
+						<div class="mr-4 mt-1 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+						</div>
+						<div>
+							<h4 class="font-medium text-gray-800">Carbon Footprint Reduction</h4>
+							<p class="text-sm text-gray-600">Our AI-designed pipe systems and layouts minimize material usage and optimize thermal properties, contributing significantly to carbon reduction goals.</p>
+						</div>
+					</div>
+				</div>
+				<div class="pt-4">
+					<a href="/ai" class="inline-flex items-center font-medium text-blue-700 hover:text-blue-800">
+						Learn more about our innovations
+						<svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+							<path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!-- Partners Section -->
 <section class="partners bg-gray-50 py-12 md:py-20">
 	<div class="container mx-auto px-4 sm:px-6">

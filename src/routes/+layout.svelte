@@ -116,6 +116,13 @@
 				</li>
 				<li>
 					<a
+						href="/ai"
+						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
+						>AI Solutions</a
+					>
+				</li>
+				<li>
+					<a
 						href="/partners"
 						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
 						>Partners</a
@@ -174,6 +181,13 @@
 					</li>
 					<li>
 						<a
+							href="/ai"
+							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
+							onclick={closeMenu}>AI Solutions</a
+						>
+					</li>
+					<li>
+						<a
 							href="/partners"
 							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
 							onclick={closeMenu}>Partners</a
@@ -224,12 +238,13 @@
 						<li><a href="/" class="text-gray-300 hover:text-white">Home</a></li>
 						<li><a href="/products" class="text-gray-300 hover:text-white">Products</a></li>
 						<li><a href="/orders" class="text-gray-300 hover:text-white">Orders</a></li>
-						<li><a href="/partners" class="text-gray-300 hover:text-white">Partners</a></li>
+						<li><a href="/ai" class="text-gray-300 hover:text-white">AI Solutions</a></li>
 					</ul>
 					<!-- Column 2 -->
 					<ul class="space-y-2">
 						<li><a href="/hvac" class="text-gray-300 hover:text-white">HVAC</a></li>
 						<li><a href="/maintenance" class="text-gray-300 hover:text-white">Maintenance</a></li>
+						<li><a href="/partners" class="text-gray-300 hover:text-white">Partners</a></li>
 						<li><a href="/about" class="text-gray-300 hover:text-white">About Us</a></li>
 						<li><a href="/contact" class="text-gray-300 hover:text-white">Contact</a></li>
 					</ul>
