@@ -185,3 +185,94 @@
 		</div>
 	</div>
 </section>
+
+<!-- Partners Section -->
+<section class="partners bg-gray-50 py-12 md:py-20">
+	<div class="container mx-auto px-4 sm:px-6">
+		<h2 class="mb-8 text-center text-xl font-medium sm:text-2xl md:mb-10">
+			OUR TRUSTED PARTNERS
+		</h2>
+		
+		<!-- Mobile partners display (vertical stack) -->
+		<div class="flex flex-col items-center gap-8 md:hidden">
+			<div class="partner-card flex w-full max-w-sm flex-col items-center rounded-lg bg-white p-6 shadow-sm">
+				<img src="/images/cees.png" alt="CEES Logo" class="mb-4 h-16 object-contain" />
+				<span class="text-sm font-medium text-gray-800">CEES</span>
+			</div>
+			
+			<div class="partner-card flex w-full max-w-sm flex-col items-center rounded-lg bg-white p-6 shadow-sm">
+				<img src="/images/aenor.jpg" alt="AENOR Logo" class="mb-4 h-16 object-contain" />
+				<span class="text-sm font-medium text-gray-800">AENOR</span>
+			</div>
+			
+			<div class="partner-card flex w-full max-w-sm flex-col items-center rounded-lg bg-white p-6 shadow-sm">
+				<img src="/images/viking.png" alt="VIKING Logo" class="mb-4 h-16 object-contain" />
+				<span class="text-sm font-medium text-gray-800">VIKING</span>
+			</div>
+			
+			<div class="partner-card flex w-full max-w-sm flex-col items-center rounded-lg bg-white p-6 shadow-sm">
+				<img src="/images/wefatherm.png" alt="WEFATHERM Logo" class="mb-4 h-16 object-contain" />
+				<span class="text-sm font-medium text-gray-800">WEFATHERM</span>
+			</div>
+		</div>
+		
+		<!-- Desktop partners display (horizontal with hover effects) -->
+		<div class="hidden md:block">
+			<div class="mx-auto grid max-w-6xl grid-cols-2 gap-8 lg:grid-cols-4">
+				<div class="partner-card group flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md">
+					<div class="relative h-24 w-full overflow-hidden">
+						<img 
+							src="/images/cees.png" 
+							alt="CEES Logo" 
+							class="mx-auto h-full object-contain transition-transform group-hover:scale-105" 
+						/>
+					</div>
+					<span class="mt-4 text-sm font-medium text-gray-800">CEES</span>
+				</div>
+				
+				<div class="partner-card group flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md">
+					<div class="relative h-24 w-full overflow-hidden">
+						<img 
+							src="/images/aenor.jpg" 
+							alt="AENOR Logo" 
+							class="mx-auto h-full object-contain transition-transform group-hover:scale-105" 
+						/>
+					</div>
+					<span class="mt-4 text-sm font-medium text-gray-800">AENOR</span>
+				</div>
+				
+				<div class="partner-card group flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md">
+					<div class="relative h-24 w-full overflow-hidden">
+						<img 
+							src="/images/viking.png" 
+							alt="VIKING Logo" 
+							class="mx-auto h-full object-contain transition-transform group-hover:scale-105" 
+						/>
+					</div>
+					<span class="mt-4 text-sm font-medium text-gray-800">VIKING</span>
+				</div>
+				
+				<div class="partner-card group flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md">
+					<div class="relative h-24 w-full overflow-hidden">
+						<img 
+							src="/images/wefatherm.png" 
+							alt="WEFATHERM Logo" 
+							class="mx-auto h-full object-contain transition-transform group-hover:scale-105" 
+						/>
+					</div>
+					<span class="mt-4 text-sm font-medium text-gray-800">WEFATHERM</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="mx-auto mt-10 max-w-2xl text-center">
+			<p class="text-sm text-gray-700">
+				TECNOPIPE works with industry leaders to deliver the highest quality pipe solutions.
+				Our strategic partnerships allow us to offer innovative and reliable products for all your needs.
+			</p>
+			<a href="/partners" class="mt-4 inline-block text-xs font-medium text-blue-700 hover:text-blue-800">
+				LEARN MORE ABOUT OUR PARTNERSHIPS →
+			</a>
+		</div>
+	</div>
+</section>

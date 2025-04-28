@@ -62,18 +62,14 @@
 				
 				<div class="mb-8">
 					<h3 class="mb-3 text-lg font-medium">Our Office</h3>
-					<p class="mb-1 text-gray-700">Street</p>
-					<p class="mb-1 text-gray-700">Office</p>
-					<p class="mb-4 text-gray-700">Quito, Ecuador 12345</p>
+					<p class="mb-1 text-gray-700">Av. NNUU E230 y Núñez de Vela</p>
+					<p class="mb-1 text-gray-700">Edificio Metropolitano, Of. 309</p>
+					<p class="mb-4 text-gray-700">Quito, Ecuador</p>
 					
 					<h4 class="mb-2 font-medium">Phone</h4>
 					<p class="mb-4 text-gray-700">
 						<a href="tel:(+593) 98-966-0516" class="text-blue-700 hover:text-blue-800">(+593) 98-966-0516</a>
 					</p>
-                    <p class="mb-4 text-gray-700">
-						<a href="tel:(+593) 99-733-1443" class="text-blue-700 hover:text-blue-800">(+593) 99-733-1443</a>
-					</p>
-					
 					<h4 class="mb-2 font-medium">Email</h4>
 					<p class="mb-4 text-gray-700">
 						<a href="mailto:eduardoamador@eduardoamador.com" class="text-blue-700 hover:text-blue-800">eduardoamador@eduardoamador.com</a>
@@ -211,12 +207,66 @@
 	<div class="container mx-auto px-4 sm:px-6">
 		<h2 class="mb-8 text-xl font-medium sm:text-2xl">FIND US</h2>
 		
-		<!-- Map placeholder -->
-		<div class="flex h-80 w-full items-center justify-center rounded bg-gray-300 text-gray-600">
-			<div class="text-center">
-				<p class="mb-2">Map Placeholder</p>
-				<p class="text-sm">Here you would embed your Google Maps or other map service</p>
+		<!-- Embedded Google Maps iframe - simpler approach -->
+		<div class="mb-8 w-full overflow-hidden rounded-lg shadow-md">
+			<iframe 
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7962523792144!2d-78.48829992414801!3d-0.17624829983956174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a76d952d93f%3A0x14b527d520d1ed35!2sAv.%20Naciones%20Unidas%20%26%20N%C3%BA%C3%B1ez%20de%20Vela%2C%20Quito%20170507%2C%20Ecuador!5e0!3m2!1sen!2sus!4v1714352714456!5m2!1sen!2sus" 
+				width="100%" 
+				height="450" 
+				style="border:0;" 
+				allowfullscreen="" 
+				loading="lazy" 
+				referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
+		</div>
+		
+		<!-- Directions -->
+		<div class="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-2">
+			<div class="rounded-lg bg-white p-6 shadow-sm">
+				<h3 class="mb-4 text-lg font-medium text-blue-700">Directions from Quito Airport</h3>
+				<ol class="ml-4 list-decimal space-y-2 text-gray-700">
+					<li>Exit the airport and head southeast on Av. Amazonas</li>
+					<li>Continue onto Av. Eloy Alfaro</li>
+					<li>Turn right onto Av. Naciones Unidas (NNUU)</li>
+					<li>Edificio Metropolitano will be on your right at the intersection with Núñez de Vela</li>
+					<li>Our office is located on the 3rd floor, Office 309</li>
+				</ol>
 			</div>
+			
+			<div class="rounded-lg bg-white p-6 shadow-sm">
+				<h3 class="mb-4 text-lg font-medium text-blue-700">Parking Information</h3>
+				<p class="mb-4 text-gray-700">
+					Visitor parking is available at the Edificio Metropolitano parking garage. Please take your ticket to our office for validation.
+				</p>
+				<p class="text-gray-700">
+					Nearby public transportation includes the Ecovía system with a stop approximately 400 meters from our building.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Get Directions CTA -->
+<section class="bg-blue-900 py-10 text-white">
+	<div class="container mx-auto px-4 text-center sm:px-6">
+		<h2 class="mb-6 text-2xl font-medium md:text-3xl">Visit Our Office Today</h2>
+		<p class="mx-auto mb-8 max-w-2xl text-lg text-blue-100">
+			Schedule an appointment to discuss your piping needs in person or receive a consultation from our experts.
+		</p>
+		<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+			<a
+				href="https://www.google.com/maps/dir/?api=1&destination=Av.+NNUU+E230+Núñez+de+Vela+Edificio+Metropolitano+Quito+Ecuador"
+				target="_blank"
+				class="rounded-md bg-white px-6 py-3 font-medium text-blue-900 transition-all hover:bg-blue-50"
+			>
+				Get Directions
+			</a>
+			<a
+				href="tel:(+593) 98-966-0516"
+				class="rounded-md border-2 border-white bg-transparent px-6 py-3 font-medium text-white transition-all hover:bg-white/10"
+			>
+				Call For Appointment
+			</a>
 		</div>
 	</div>
 </section>

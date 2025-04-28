@@ -116,6 +116,13 @@
 				</li>
 				<li>
 					<a
+						href="/partners"
+						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
+						>Partners</a
+					>
+				</li>
+				<li>
+					<a
 						href="/about"
 						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
 						>About Us</a
@@ -167,6 +174,13 @@
 					</li>
 					<li>
 						<a
+							href="/partners"
+							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
+							onclick={closeMenu}>Partners</a
+						>
+					</li>
+					<li>
+						<a
 							href="/about"
 							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
 							onclick={closeMenu}>About Us</a
@@ -201,17 +215,25 @@
 				</p>
 			</div>
 
-			<!-- Quick Links -->
+			<!-- Quick Links - Now in 2 columns -->
 			<div>
 				<h3 class="mb-4 text-lg font-semibold sm:text-xl">Quick Links</h3>
-				<ul class="space-y-2">
-					<li><a href="/" class="text-gray-300 hover:text-white">Home</a></li>
-					<li><a href="/products" class="text-gray-300 hover:text-white">Products</a></li>
-					<li><a href="/orders" class="text-gray-300 hover:text-white">Orders</a></li>
-					<li><a href="/hvac" class="text-gray-300 hover:text-white">HVAC</a></li>
-					<li><a href="/maintenance" class="text-gray-300 hover:text-white">Maintenance</a></li>
-					<li><a href="/about" class="text-gray-300 hover:text-white">About Us</a></li>
-				</ul>
+				<div class="grid grid-cols-2 gap-x-4">
+					<!-- Column 1 -->
+					<ul class="space-y-2">
+						<li><a href="/" class="text-gray-300 hover:text-white">Home</a></li>
+						<li><a href="/products" class="text-gray-300 hover:text-white">Products</a></li>
+						<li><a href="/orders" class="text-gray-300 hover:text-white">Orders</a></li>
+						<li><a href="/partners" class="text-gray-300 hover:text-white">Partners</a></li>
+					</ul>
+					<!-- Column 2 -->
+					<ul class="space-y-2">
+						<li><a href="/hvac" class="text-gray-300 hover:text-white">HVAC</a></li>
+						<li><a href="/maintenance" class="text-gray-300 hover:text-white">Maintenance</a></li>
+						<li><a href="/about" class="text-gray-300 hover:text-white">About Us</a></li>
+						<li><a href="/contact" class="text-gray-300 hover:text-white">Contact</a></li>
+					</ul>
+				</div>
 			</div>
 
 			<!-- Social Media & Newsletter -->

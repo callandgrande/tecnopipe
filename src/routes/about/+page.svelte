@@ -11,7 +11,7 @@
 		},
 		{
 			name: 'Rebeca Santacruz',
-			position: 'CEO',
+			position: 'TBD',
 			image: '/api/placeholder/300/300'
 		}
 	];
@@ -79,11 +79,9 @@
 				</p>
 			</div>
 			
-			<!-- Image placeholder -->
-			<div class="mb-12 h-64 w-full overflow-hidden rounded-lg bg-gray-200 md:h-80">
-				<div class="flex h-full w-full items-center justify-center text-gray-500">
-					Company Image Placeholder
-				</div>
+			<!-- Company Image -->
+			<div class="mb-12 flex h-64 w-full items-center justify-center overflow-hidden rounded-lg md:h-80">
+				<img src="/images/10.png" alt="TecnoPipe Company" class="max-h-full object-contain" />
 			</div>
 		</div>
 	</div>
@@ -192,18 +190,18 @@
 		<h2 class="mb-10 text-center text-2xl font-medium md:text-3xl">OUR PARTNERS</h2>
 		
 		<div class="flex flex-wrap items-center justify-center gap-8">
-			<!-- Partner logo placeholders -->
-			<div class="flex h-20 w-40 items-center justify-center rounded bg-gray-200">
-				<span class="text-gray-500">Partner Logo</span>
+			<!-- Partner logos -->
+			<div class="flex h-20 w-40 items-center justify-center">
+				<img src="/images/cees.png" alt="CEES Logo" class="max-h-full max-w-full object-contain" />
 			</div>
-			<div class="flex h-20 w-40 items-center justify-center rounded bg-gray-200">
-				<span class="text-gray-500">Partner Logo</span>
+			<div class="flex h-20 w-40 items-center justify-center">
+				<img src="/images/aenor.jpg" alt="AENOR Logo" class="max-h-full max-w-full object-contain" />
 			</div>
-			<div class="flex h-20 w-40 items-center justify-center rounded bg-gray-200">
-				<span class="text-gray-500">Partner Logo</span>
+			<div class="flex h-20 w-40 items-center justify-center">
+				<img src="/images/viking.png" alt="VIKING Logo" class="max-h-full max-w-full object-contain" />
 			</div>
-			<div class="flex h-20 w-40 items-center justify-center rounded bg-gray-200">
-				<span class="text-gray-500">Partner Logo</span>
+			<div class="flex h-20 w-40 items-center justify-center">
+				<img src="/images/wefatherm.png" alt="WEFATHERM Logo" class="max-h-full max-w-full object-contain" />
 			</div>
 		</div>
 		
