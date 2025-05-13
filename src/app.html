@@ -8,5 +8,21 @@
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
+
+		<!-- Move Botpress scripts here, at the end of body -->
+		<script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
+		<script>
+			// Add event listener to ensure body is fully loaded
+			window.addEventListener('DOMContentLoaded', (event) => {
+				// Small timeout to ensure everything is ready
+				setTimeout(() => {
+					// Load the second script dynamically
+					const botpressScript = document.createElement('script');
+					botpressScript.src =
+						'https://files.bpcontent.cloud/2025/05/13/20/20250513203935-XST25NPL.js';
+					document.body.appendChild(botpressScript);
+				}, 500);
+			});
+		</script>
 	</body>
 </html>
