@@ -59,7 +59,7 @@
 				<div
 					class={`flex h-10 w-40 items-center justify-center ${isTransparent ? 'text-white' : 'bg-gray-200 text-gray-700'}`}
 				>
-				<img src="/images/tecnopipe-logo.png" alt="TecnoPipeLogo" class="h-10" />
+					<img src="/images/tecnopipe-logo.png" alt="TecnoPipeLogo" class="h-10" />
 				</div>
 			</a>
 		</div>
@@ -83,21 +83,20 @@
 			</div>
 		</button>
 
-		<!-- Desktop navigation -->
 		<nav class="hidden md:block">
 			<ul class="flex space-x-6 lg:space-x-8">
 				<li>
 					<a
 						href="/products"
 						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
-						>Products</a
+						>Portable Water</a
 					>
 				</li>
 				<li>
 					<a
-						href="/orders"
+						href="/ventilacion"
 						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
-						>Orders</a
+						>Active Ventilation</a
 					>
 				</li>
 				<li>
@@ -109,23 +108,9 @@
 				</li>
 				<li>
 					<a
-						href="/maintenance"
+						href="/orders"
 						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
-						>Maintenance</a
-					>
-				</li>
-				<li>
-					<a
-						href="/ai"
-						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
-						>AI Solutions</a
-					>
-				</li>
-				<li>
-					<a
-						href="/partners"
-						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
-						>Partners</a
+						>Orders</a
 					>
 				</li>
 				<li>
@@ -155,14 +140,14 @@
 						<a
 							href="/products"
 							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
-							onclick={closeMenu}>Products</a
+							onclick={closeMenu}>Portable Water</a
 						>
 					</li>
 					<li>
 						<a
-							href="/orders"
+							href="/ventilacion"
 							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
-							onclick={closeMenu}>Orders</a
+							onclick={closeMenu}>Active Ventilation</a
 						>
 					</li>
 					<li>
@@ -174,23 +159,9 @@
 					</li>
 					<li>
 						<a
-							href="/maintenance"
+							href="/orders"
 							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
-							onclick={closeMenu}>Maintenance</a
-						>
-					</li>
-					<li>
-						<a
-							href="/ai"
-							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
-							onclick={closeMenu}>AI Solutions</a
-						>
-					</li>
-					<li>
-						<a
-							href="/partners"
-							class="block px-6 py-3 text-white hover:bg-black/80 hover:text-blue-300"
-							onclick={closeMenu}>Partners</a
+							onclick={closeMenu}>Orders</a
 						>
 					</li>
 					<li>
@@ -218,14 +189,21 @@
 			<!-- Company Info -->
 			<div>
 				<h3 class="mb-4 text-lg font-semibold sm:text-xl">TecnoPipe</h3>
-				<p class="mb-2 text-gray-300">Av. NNUU E230 y Núñez de Vela</p>
-				<p class="mb-2 text-gray-300">Edificio Metropolitano, Of. 309</p>
-				<p class="mb-2 text-gray-300">Quito, Ecuador</p>
 				<p class="mb-2 text-gray-300">
-					<a href="tel:(+593) 98-966-0516" class="text-gray-300 hover:text-white">(+593) 98-966-0516</a>
+					<a href="tel:0989660516" class="text-gray-300 hover:text-white">(+593) 98-966-0516</a>
+				</p>
+				<p class="mb-2 text-gray-300">
+					<a href="tel:0997331443" class="text-gray-300 hover:text-white">(+593) 99-733-1443</a>
 				</p>
 				<p class="text-gray-300">
-					<a href="mailto:eduardoamador@eduardoamador.com" class="text-gray-300 hover:text-white">eduardoamador@eduardoamador.com</a>
+					<a href="mailto:eduardoamador@eduardoamador.com" class="text-gray-300 hover:text-white"
+						>eduardoamador@eduardoamador.com</a
+					>
+				</p>
+				<p class="text-gray-300">
+					<a href="mailto:rebecasantacruz@hotmail.com" class="text-gray-300 hover:text-white"
+						>rebecasantacruz@hotmail.com</a
+					>
 				</p>
 			</div>
 
@@ -236,15 +214,15 @@
 					<!-- Column 1 -->
 					<ul class="space-y-2">
 						<li><a href="/" class="text-gray-300 hover:text-white">Home</a></li>
-						<li><a href="/products" class="text-gray-300 hover:text-white">Products</a></li>
-						<li><a href="/orders" class="text-gray-300 hover:text-white">Orders</a></li>
-						<li><a href="/ai" class="text-gray-300 hover:text-white">AI Solutions</a></li>
+						<li><a href="/products" class="text-gray-300 hover:text-white">Portable Water</a></li>
+						<li>
+							<a href="/ventilacion" class="text-gray-300 hover:text-white">Active Ventilation</a>
+						</li>
 					</ul>
 					<!-- Column 2 -->
 					<ul class="space-y-2">
 						<li><a href="/hvac" class="text-gray-300 hover:text-white">HVAC</a></li>
-						<li><a href="/maintenance" class="text-gray-300 hover:text-white">Maintenance</a></li>
-						<li><a href="/partners" class="text-gray-300 hover:text-white">Partners</a></li>
+						<li><a href="/orders" class="text-gray-300 hover:text-white">Orders</a></li>
 						<li><a href="/about" class="text-gray-300 hover:text-white">About Us</a></li>
 						<li><a href="/contact" class="text-gray-300 hover:text-white">Contact</a></li>
 					</ul>
@@ -256,17 +234,12 @@
 				<h3 class="mb-4 text-lg font-semibold sm:text-xl">Connect With Us</h3>
 				<div class="mb-6 flex space-x-4">
 					<!-- Social Media Icons -->
-					<a href="https://www.facebook.com" target="_blank" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10">
-						<span class="text-xs">FB</span>
-					</a>
-					<a href="https://www.instagram.com/tecnopipe_ec/?hl=en" target="_blank" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10">
+					<a
+						href="https://www.instagram.com/tecnopipe_ec/?hl=en"
+						target="_blank"
+						class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10"
+					>
 						<span class="text-xs">IG</span>
-					</a>
-					<a href="https://www.linkedin.com" target="_blank" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10">
-						<span class="text-xs">IN</span>
-					</a>
-					<a href="https://www.youtube.com" target="_blank" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-600 sm:h-10 sm:w-10">
-						<span class="text-xs">YT</span>
 					</a>
 				</div>
 

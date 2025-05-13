@@ -21,7 +21,8 @@
 				class="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 text-center"
 			>
 				<h1 class="mb-4 text-4xl font-bold text-white sm:text-5xl">
-					<span class="inline-block">TECNO</span><span class="inline-block text-blue-300">PIPE</span>
+					<span class="inline-block">TECNO</span><span class="inline-block text-blue-300">PIPE</span
+					>
 				</h1>
 				<p class="mb-8 max-w-md text-lg text-gray-100">
 					Industry-leading pipe solutions for residential and commercial applications.
@@ -186,76 +187,156 @@
 	</div>
 </section>
 
-<!-- AI Innovation Section -->
+<!-- AI Innovation Section for src/routes/+page.svelte -->
 <section class="ai-innovation bg-white py-12 md:py-20">
 	<div class="container mx-auto px-4 sm:px-6">
 		<h2 class="mb-8 text-center text-xl font-medium sm:text-2xl md:mb-10">
 			INNOVATION THROUGH ARTIFICIAL INTELLIGENCE
 		</h2>
-		
+
 		<div class="mx-auto grid max-w-6xl gap-10 md:grid-cols-2 md:items-center">
 			<!-- Left Column: Image -->
 			<div class="flex items-center justify-center">
 				<div class="relative h-72 w-full max-w-lg overflow-hidden rounded-lg bg-blue-50 shadow-md">
 					<div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-blue-700/20"></div>
-					<div class="relative flex h-full w-full flex-col items-center justify-center p-6 text-center">
+					<div
+						class="relative flex h-full w-full flex-col items-center justify-center p-6 text-center"
+					>
 						<div class="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-blue-100">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-10 w-10 text-blue-700"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+								/>
 							</svg>
 						</div>
 						<h3 class="mb-2 text-xl font-medium text-blue-800">Smart Solutions</h3>
-						<p class="text-blue-700">Harnessing the power of AI to optimize resource usage and reduce environmental impact.</p>
+						<p class="text-blue-700">
+							Harnessing innovative technologies to optimize resource usage and reduce environmental
+							impact.
+						</p>
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- Right Column: Content -->
 			<div class="space-y-6">
-				<h3 class="text-2xl font-medium text-gray-800">Pioneering AI for a Sustainable Future</h3>
+				<h3 class="text-2xl font-medium text-gray-800">
+					Pioneering Solutions for a Sustainable Future
+				</h3>
 				<p class="text-gray-700">
-					At TecnoPipe, we're leveraging cutting-edge artificial intelligence to revolutionize how pipe systems interact with the environment. Our AI-powered solutions optimize water flow, detect leaks before they become problematic, and reduce energy consumption across entire networks.
+					At TecnoPipe, we're leveraging advanced technologies to revolutionize how pipe systems
+					interact with the environment. Our innovative solutions optimize water flow, improve
+					efficiency, and reduce energy consumption across entire networks.
 				</p>
 				<div class="space-y-4">
 					<div class="flex items-start">
-						<div class="mr-4 mt-1 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+						<div
+							class="mt-1 mr-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-100"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-4 w-4 text-blue-700"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M5 13l4 4L19 7"
+								/>
 							</svg>
 						</div>
 						<div>
-							<h4 class="font-medium text-gray-800">Predictive Maintenance</h4>
-							<p class="text-sm text-gray-600">Our AI algorithms analyze data from sensors embedded in pipe systems to predict maintenance needs before failures occur, reducing waste and extending system lifespan.</p>
+							<h4 class="font-medium text-gray-800">Smart Maintenance</h4>
+							<p class="text-sm text-gray-600">
+								Our systems incorporate advanced monitoring capabilities that help optimize
+								maintenance schedules, reducing waste and extending system lifespan.
+							</p>
 						</div>
 					</div>
 					<div class="flex items-start">
-						<div class="mr-4 mt-1 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+						<div
+							class="mt-1 mr-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-100"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-4 w-4 text-blue-700"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M5 13l4 4L19 7"
+								/>
 							</svg>
 						</div>
 						<div>
 							<h4 class="font-medium text-gray-800">Resource Optimization</h4>
-							<p class="text-sm text-gray-600">Smart flow management uses machine learning to reduce energy consumption by up to 30% while maintaining optimal performance in residential and commercial buildings.</p>
+							<p class="text-sm text-gray-600">
+								Smart flow management uses technology to reduce energy consumption by up to 30%
+								while maintaining optimal performance in residential and commercial buildings.
+							</p>
 						</div>
 					</div>
 					<div class="flex items-start">
-						<div class="mr-4 mt-1 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+						<div
+							class="mt-1 mr-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-100"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-4 w-4 text-blue-700"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M5 13l4 4L19 7"
+								/>
 							</svg>
 						</div>
 						<div>
 							<h4 class="font-medium text-gray-800">Carbon Footprint Reduction</h4>
-							<p class="text-sm text-gray-600">Our AI-designed pipe systems and layouts minimize material usage and optimize thermal properties, contributing significantly to carbon reduction goals.</p>
+							<p class="text-sm text-gray-600">
+								Our optimized pipe systems and layouts minimize material usage and improve thermal
+								properties, contributing significantly to carbon reduction goals.
+							</p>
 						</div>
 					</div>
 				</div>
 				<div class="pt-4">
-					<a href="/ai" class="inline-flex items-center font-medium text-blue-700 hover:text-blue-800">
+					<a
+						href="/ai"
+						class="inline-flex items-center font-medium text-blue-700 hover:text-blue-800"
+					>
 						Learn more about our innovations
-						<svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-							<path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="ml-2 h-5 w-5"
+							viewBox="0 0 20 20"
+							fill="currentColor"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+								clip-rule="evenodd"
+							/>
 						</svg>
 					</a>
 				</div>
@@ -267,90 +348,134 @@
 <!-- Partners Section -->
 <section class="partners bg-gray-50 py-12 md:py-20">
 	<div class="container mx-auto px-4 sm:px-6">
-		<h2 class="mb-8 text-center text-xl font-medium sm:text-2xl md:mb-10">
-			OUR TRUSTED PARTNERS
-		</h2>
-		
+		<h2 class="mb-8 text-center text-xl font-medium sm:text-2xl md:mb-10">OUR TRUSTED PARTNERS</h2>
+
 		<!-- Mobile partners display (vertical stack) -->
 		<div class="flex flex-col items-center gap-8 md:hidden">
-			<div class="partner-card flex w-full max-w-sm flex-col items-center rounded-lg bg-white p-6 shadow-sm">
-				<img src="/images/cees.png" alt="CEES Logo" class="mb-4 h-16 object-contain" />
-				<span class="text-sm font-medium text-gray-800">CEES</span>
+			<div
+				class="partner-card flex w-full max-w-sm flex-col items-center rounded-lg bg-white p-6 shadow-sm"
+			>
+				<img src="/images/ecosan.png" alt="ECOSAN Logo" class="mb-4 h-16 object-contain" />
+				<span class="text-sm font-medium text-gray-800">ECOSAN</span>
 			</div>
-			
-			<div class="partner-card flex w-full max-w-sm flex-col items-center rounded-lg bg-white p-6 shadow-sm">
-				<img src="/images/aenor.jpg" alt="AENOR Logo" class="mb-4 h-16 object-contain" />
-				<span class="text-sm font-medium text-gray-800">AENOR</span>
+
+			<div
+				class="partner-card flex w-full max-w-sm flex-col items-center rounded-lg bg-white p-6 shadow-sm"
+			>
+				<img src="/images/studor.png" alt="STUDOR Logo" class="mb-4 h-16 object-contain" />
+				<span class="text-sm font-medium text-gray-800">STUDOR</span>
 			</div>
-			
-			<div class="partner-card flex w-full max-w-sm flex-col items-center rounded-lg bg-white p-6 shadow-sm">
-				<img src="/images/viking.png" alt="VIKING Logo" class="mb-4 h-16 object-contain" />
-				<span class="text-sm font-medium text-gray-800">VIKING</span>
+
+			<div
+				class="partner-card flex w-full max-w-sm flex-col items-center rounded-lg bg-white p-6 shadow-sm"
+			>
+				<img src="/images/dcadd.png" alt="DCADD Logo" class="mb-4 h-16 object-contain" />
+				<span class="text-sm font-medium text-gray-800">DCADD</span>
 			</div>
-			
-			<div class="partner-card flex w-full max-w-sm flex-col items-center rounded-lg bg-white p-6 shadow-sm">
-				<img src="/images/wefatherm.png" alt="WEFATHERM Logo" class="mb-4 h-16 object-contain" />
-				<span class="text-sm font-medium text-gray-800">WEFATHERM</span>
+
+			<div
+				class="partner-card flex w-full max-w-sm flex-col items-center rounded-lg bg-white p-6 shadow-sm"
+			>
+				<img src="/images/trane.png" alt="TRANE Logo" class="mb-4 h-16 object-contain" />
+				<span class="text-sm font-medium text-gray-800">TRANE</span>
+			</div>
+
+			<div
+				class="partner-card flex w-full max-w-sm flex-col items-center rounded-lg bg-white p-6 shadow-sm"
+			>
+				<img src="/images/mitsubishi.png" alt="MITSUBISHI Logo" class="mb-4 h-16 object-contain" />
+				<span class="text-sm font-medium text-gray-800">MITSUBISHI</span>
+			</div>
+
+			<div
+				class="partner-card flex w-full max-w-sm flex-col items-center rounded-lg bg-white p-6 shadow-sm"
+			>
+				<img src="/images/sodeca.png" alt="SODECA Logo" class="mb-4 h-16 object-contain" />
+				<span class="text-sm font-medium text-gray-800">SODECA</span>
 			</div>
 		</div>
-		
+
 		<!-- Desktop partners display (horizontal with hover effects) -->
 		<div class="hidden md:block">
-			<div class="mx-auto grid max-w-6xl grid-cols-2 gap-8 lg:grid-cols-4">
-				<div class="partner-card group flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md">
+			<div class="mx-auto grid max-w-6xl grid-cols-2 gap-8 lg:grid-cols-3">
+				<div
+					class="partner-card group flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md"
+				>
 					<div class="relative h-24 w-full overflow-hidden">
-						<img 
-							src="/images/cees.png" 
-							alt="CEES Logo" 
-							class="mx-auto h-full object-contain transition-transform group-hover:scale-105" 
+						<img
+							src="/images/ecosan.png"
+							alt="ECOSAN Logo"
+							class="mx-auto h-full object-contain transition-transform group-hover:scale-105"
 						/>
 					</div>
-					<span class="mt-4 text-sm font-medium text-gray-800">CEES</span>
+					<span class="mt-4 text-sm font-medium text-gray-800">ECOSAN</span>
 				</div>
-				
-				<div class="partner-card group flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md">
+
+				<div
+					class="partner-card group flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md"
+				>
 					<div class="relative h-24 w-full overflow-hidden">
-						<img 
-							src="/images/aenor.jpg" 
-							alt="AENOR Logo" 
-							class="mx-auto h-full object-contain transition-transform group-hover:scale-105" 
+						<img
+							src="/images/studor.png"
+							alt="STUDOR Logo"
+							class="mx-auto h-full object-contain transition-transform group-hover:scale-105"
 						/>
 					</div>
-					<span class="mt-4 text-sm font-medium text-gray-800">AENOR</span>
+					<span class="mt-4 text-sm font-medium text-gray-800">STUDOR</span>
 				</div>
-				
-				<div class="partner-card group flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md">
+
+				<div
+					class="partner-card group flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md"
+				>
 					<div class="relative h-24 w-full overflow-hidden">
-						<img 
-							src="/images/viking.png" 
-							alt="VIKING Logo" 
-							class="mx-auto h-full object-contain transition-transform group-hover:scale-105" 
+						<img
+							src="/images/dcadd.png"
+							alt="DCADD Logo"
+							class="mx-auto h-full object-contain transition-transform group-hover:scale-105"
 						/>
 					</div>
-					<span class="mt-4 text-sm font-medium text-gray-800">VIKING</span>
+					<span class="mt-4 text-sm font-medium text-gray-800">DCADD</span>
 				</div>
-				
-				<div class="partner-card group flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md">
+
+				<div
+					class="partner-card group flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md"
+				>
 					<div class="relative h-24 w-full overflow-hidden">
-						<img 
-							src="/images/wefatherm.png" 
-							alt="WEFATHERM Logo" 
-							class="mx-auto h-full object-contain transition-transform group-hover:scale-105" 
+						<img
+							src="/images/trane.png"
+							alt="TRANE Logo"
+							class="mx-auto h-full object-contain transition-transform group-hover:scale-105"
 						/>
 					</div>
-					<span class="mt-4 text-sm font-medium text-gray-800">WEFATHERM</span>
+					<span class="mt-4 text-sm font-medium text-gray-800">TRANE</span>
+				</div>
+
+				<div
+					class="partner-card group flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md"
+				>
+					<div class="relative h-24 w-full overflow-hidden">
+						<img
+							src="/images/mitsubishi.png"
+							alt="MITSUBISHI Logo"
+							class="mx-auto h-full object-contain transition-transform group-hover:scale-105"
+						/>
+					</div>
+					<span class="mt-4 text-sm font-medium text-gray-800">MITSUBISHI</span>
+				</div>
+
+				<div
+					class="partner-card group flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md"
+				>
+					<div class="relative h-24 w-full overflow-hidden">
+						<img
+							src="/images/sodeca.png"
+							alt="SODECA Logo"
+							class="mx-auto h-full object-contain transition-transform group-hover:scale-105"
+						/>
+					</div>
+					<span class="mt-4 text-sm font-medium text-gray-800">SODECA</span>
 				</div>
 			</div>
-		</div>
-		
-		<div class="mx-auto mt-10 max-w-2xl text-center">
-			<p class="text-sm text-gray-700">
-				TECNOPIPE works with industry leaders to deliver the highest quality pipe solutions.
-				Our strategic partnerships allow us to offer innovative and reliable products for all your needs.
-			</p>
-			<a href="/partners" class="mt-4 inline-block text-xs font-medium text-blue-700 hover:text-blue-800">
-				LEARN MORE ABOUT OUR PARTNERSHIPS →
-			</a>
 		</div>
 	</div>
 </section>
