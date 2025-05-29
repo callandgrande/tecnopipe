@@ -89,7 +89,7 @@
 					<a
 						href="/products"
 						class={`text-sm font-medium transition-colors lg:text-base ${isTransparent ? 'text-white hover:text-blue-300' : 'text-gray-700 hover:text-blue-800'}`}
-						>Portable Water</a
+						>Drinking Water</a
 					>
 				</li>
 				<li>
