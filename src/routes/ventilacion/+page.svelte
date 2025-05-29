@@ -20,7 +20,7 @@
 		},
 		{
 			name: 'Maxi-Vent',
-			image: '/images/studor-maxi.png',
+			image: '/images/studor-maxi.jpg',
 			description: 'High-capacity air admittance valve for multiple fixture or branch venting',
 			features: [
 				'Greater airflow capacity',
@@ -31,7 +31,7 @@
 		},
 		{
 			name: 'P.A.P.A.',
-			image: '/images/studor-papa.png',
+			image: '/images/studor-papa.jpg',
 			description:
 				'Positive Air Pressure Attenuator that protects plumbing systems from positive pressure transients',
 			features: [
