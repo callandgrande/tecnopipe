@@ -242,8 +242,6 @@
 						<span class="text-xs">IG</span>
 					</a>
 				</div>
-
-				<h4 class="mb-2 font-medium">Subscribe to our newsletter</h4>
 			</div>
 		</div>
 
