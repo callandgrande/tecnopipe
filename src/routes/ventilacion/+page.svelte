@@ -310,10 +310,10 @@
 							type="file"
 							id="file"
 							class="w-full rounded-md border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-							accept=".pdf,.dwg,.dxf"
+							accept=".pdf,.dwg,.dxf,.rvt"
 							required
 						/>
-						<p class="mt-1 text-xs text-gray-500">Accepted formats: PDF, DWG, DXF</p>
+						<p class="mt-1 text-xs text-gray-500">Accepted formats: PDF, DWG, DXF, RVT</p>
 					</div>
 
 					<div>
