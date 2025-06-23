@@ -183,16 +183,17 @@
 
 			<div class="order-1 md:order-2">
 				<div class="rounded-lg bg-white p-6 shadow-sm">
+					<h3 class="mb-3 text-lg font-medium">STUDOR's innovative approach to plumbing ventilation</h3>
+					<p class="text-center text-sm text-gray-600">
+						STUDOR's system is designed to optimize airflow and reduce the need for traditional venting methods, making it a game-changer in the industry.
+					</p>
 					<div class="mb-6 overflow-hidden rounded-lg">
 						<img
-							src="/images/studor-system-diagram.png"
+							src="/images/studor-sys.png"
 							alt="STUDOR System Diagram"
 							class="w-full object-contain"
 						/>
 					</div>
-					<p class="text-center text-sm text-gray-600">
-						STUDOR's innovative approach to plumbing ventilation
-					</p>
 				</div>
 			</div>
 		</div>
