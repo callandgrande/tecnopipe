@@ -197,19 +197,21 @@
 	}
 </script>
 
-<div class="pt-20">
-	<!-- Hero section with company colors similar to homepage -->
-	<div class="relative overflow-hidden bg-blue-700 py-12 text-white">
-		<div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-600 opacity-80"></div>
-		<div class="relative z-10 container mx-auto px-4 sm:px-6">
-			<h1 class="mb-4 text-3xl font-bold sm:text-4xl">Orders</h1>
-			<p class="max-w-2xl text-lg text-blue-100">
+<!-- Hero Section -->
+<section class="relative min-h-[40vh] w-full overflow-hidden bg-blue-900">
+	<div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+	<div class="relative z-10 flex min-h-[40vh] items-center px-4 sm:px-6 md:px-10 lg:px-56">
+		<div class="max-w-2xl pt-16">
+			<h1 class="mb-4 text-4xl font-bold text-white md:text-5xl lg:text-6xl">Orders</h1>
+			<p class="text-xl font-light text-gray-100">
 				Place your order for TecnoPipe products and services. Fill out the form below to get
 				started.
 			</p>
 		</div>
 	</div>
+</section>
 
+<div class="pt-20">
 	<!-- Main content container -->
 	<div class="container mx-auto px-4 py-10 sm:px-6">
 		{#if formStep === 1}
