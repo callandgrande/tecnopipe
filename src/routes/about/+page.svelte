@@ -56,7 +56,7 @@
 <!-- Hero Section -->
 <section class="relative min-h-[40vh] w-full overflow-hidden bg-blue-900">
 	<div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
-	<div class="relative z-10 flex min-h-[40vh] items-center px-4 sm:px-6 md:px-10 lg:px-32">
+	<div class="relative z-10 flex min-h-[40vh] items-center px-4 sm:px-6 md:px-10 lg:px-56">
 		<div class="max-w-2xl pt-16">
 			<h1 class="mb-4 text-4xl font-bold text-white md:text-5xl lg:text-6xl">About Us</h1>
 			<p class="text-xl font-light text-gray-100">
