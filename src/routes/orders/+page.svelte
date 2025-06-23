@@ -23,13 +23,23 @@
 	});
 
 	// Products list - just for demo
-	const products = [
-		{ id: 1, name: 'PVC Pipe (50mm)', price: 12.5 },
-		{ id: 2, name: 'Copper Pipe (15mm)', price: 18.75 },
-		{ id: 3, name: 'Steel Pipe (100mm)', price: 45.0 },
-		{ id: 4, name: 'Pipe Connector', price: 5.25 },
-		{ id: 5, name: 'Pressure Valve', price: 22.0 }
-	];
+	let products = $state([]);
+
+	onMount(async () => {
+		await getProducts();
+	});
+
+	async function getProducts() {
+		const { data, error } = await supabase.from('products').select('*');
+		console.log(data);
+
+		if (error) {
+			console.error('Error:', error);
+			return;
+		}
+
+		products = data;
+	}
 
 	// Add new item to order
 	function addItem() {
